@@ -15,6 +15,8 @@ var messagesRef = firebase.database().ref('messages');
 //Listen for form submit
 document.getElementById('contactform1').addEventListener('submit', submitForm);
 
+$('#alert').hide();
+
 //Submit Form
 function submitForm(e) {
     e.preventDefault();
@@ -29,24 +31,16 @@ function submitForm(e) {
     //Save Message
     saveMessage(name, email, phone, project, info);
 
-    //Show alert
-    document.querySelector('.alert').toast('show');
-
-    //hide alert after three seconds
-    setTimeout(function() {
-        document.querySelector('.toast').toast('dispose');
-    }, 3000);
-
-    document.getElementById('contactform1').reset();
+    $('.alert').show();
 }
+
 
 function clearForm(e) {
     e.preventDefault();
     document.getElementById('contactForm1').reset();
 }
 
-
-//Function to get get form vaules
+//Function to go get form vaules
 function getInputVal(id) {
     return document.getElementById(id).value;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
@@ -20,10 +20,9 @@
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="">
             <span class="icon-bar top-bar"></span>
-	        <span class="icon-bar middle-bar"></span>
-	        <span class="icon-bar bottom-bar"></span>	
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -113,18 +112,29 @@
                 <div id="reviews" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="10000">
-                            <p class="d-block w-100" alt=><i>"The VCC wanted to make a special shout out and recognize Bert Campos for embodying our core values. Bert was featured in several of the values stories for his hard work and collaborating cross-functionally to make great things
-                                happen here at IeL. Thank you, Bert!"</i></p>
+                            <p class="d-block w-100" alt=><i>"The VCC wanted to make a special shout out and recognize
+                                    Bert Campos for embodying our core values. Bert was featured in several of the
+                                    values stories for his hard work and collaborating cross-functionally to make great
+                                    things
+                                    happen here at IeL. Thank you, Bert!"</i></p>
                         </div>
                         <div class="carousel-item" data-interval="10000">
-                            <p class="d-block w-100" alt=><i>"There is only one person that goes beyond the word <b>"COMMITMENT"</b>. This individual has lived and breathed by this core value day in and day out. He has been a savior for the sales team when something needed to be done and done
-                                fast. Albert Campos exemplifies what it means to be committed to our clients. He just doesn’t walk the customer through the issue but he explains why it happened and the process of how he solved for the issue. He will also
-                                discuss preventative measures so that the client will not have to go through the same issues again."</i></p>
+                            <p class="d-block w-100" alt=><i>"There is only one person that goes beyond the word
+                                    <b>"COMMITMENT"</b>. This individual has lived and breathed by this core value day
+                                    in and day out. He has been a savior for the sales team when something needed to be
+                                    done and done
+                                    fast. Albert Campos exemplifies what it means to be committed to our clients. He
+                                    just doesn’t walk the customer through the issue but he explains why it happened and
+                                    the process of how he solved for the issue. He will also
+                                    discuss preventative measures so that the client will not have to go through the
+                                    same issues again."</i></p>
                         </div>
                         <div class="carousel-item" data-interval="10000">
-                            <p class="d-block w-100" alt=><i>"Honerable mention, Albert Campos has been a <b>“NO QUESTIONS ASKED”</b>, <b>“TEAM FIRST”</b>, <b>"GOOD ON HIS COMMITMENTS”</b> type of character for the support team. His commitment to his work is exceptional, and should be recognized and celebrated.
-                                Thank you Bert for all you do for us!"</i>
-                            </p>
+                            <p class="d-block w-100" alt=><i>"Honerable mention, Albert Campos has been a <b>“NO
+                                        QUESTIONS ASKED”</b>, <b>“TEAM FIRST”</b>, <b>"GOOD ON HIS COMMITMENTS”</b> type
+                                    of character for the support team. His commitment to his work is exceptional, and
+                                    should be recognized and celebrated.
+                                    Thank you Bert for all you do for us!"</i></p>
                         </div>
                     </div>
                 </div>
@@ -150,17 +160,12 @@
         </div>
         <div class="row">
             <div class="col">
-                <!-- <ul class="list-group">
-                    <li class="list-group-item">Address: 11434 W FM 471, Apt 7105, San Antonio, Tx</li>
-                    <li class="list-group-item">Birthday: 06/08/1989</li>
-                    <li class="list-group-item">Languages: English, Spanish</li>
-                    <li class="list-group-item">Gender: Male</li>
-                </ul> -->
+                <!--  PhotoGrid  -->
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h2 class="p-skills">Abilities</h2>
+                <h2 class="p-skills">Abilities:</h2>
                 <div class="skills" id="skills">
                     <h5>Photoshop<i class="fas fa-camera"></i></h5>
                     <div class="progress">
@@ -197,11 +202,13 @@
         </div>
         <div class="row">
             <div id="cd-timeline" class="col cd-container">
+                <!--------- Pink Circles ------------------->
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img cd-picture">
                     </div>
+                    <!------------------------------------------>
                     <div class="cd-timeline-content">
-                        <h2>Inspired eLearning</h2>
+                        <h3>Inspired eLearning</h3>
                         <div class="timeline-content-info">
                             <span class="timeline-content-info-title">
                                 Technical Support Agent Tier 3
@@ -212,7 +219,7 @@
                             </span>
                         </div>
                         <p>
-                            <ul>
+                            <ul class="timeline-list">
                                 <li>Provided second line phone, email, and chat support; escalated issue to internal resources as needed. </li>
                                 <li>Served as the technical advocate for customers, providing information on best practices for utilizing company and partner products. </li>
                                 <li>Applied custom modifications to applications using moderate HTML, JavaScript, CSS and XML. </li>
@@ -233,44 +240,81 @@
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
-                <!-- cd-timeline-block -->
-
+                <!----------- Pink Circle ---------->
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img cd-movie">
                     </div>
+                    <!---------------------------------->
                     <!-- cd-timeline-img -->
-
                     <div class="cd-timeline-content">
-                        <h2>Technical Support Agent Tier 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                        <h3>Inspired eLearning</h3>
+                        <div class="timeline-content-info">
+                            <span class="timeline-content-info-title">
+                                Technical Support Agent Tier 2
+                            </span>
+                            <span class="timeline-content-info-date">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                Jul 2017 - Aug 2018
+                            </span>
+                        </div>
+                        <p>
+                            <ul class="timeline-list">
+                                <li>Provided second line phone, email, and chat support; escalated issue to internal resources as needed. </li>
+                                <li>Served as the technical advocate for customers, providing information on best practices for utilizing company and partner products. </li>
+                                <li>Applied custom modifications to applications using moderate HTML, JavaScript, CSS and XML. </li>
+                                <li>Assisted customers through technical setup, including IMS and HRIS integration.</li>
+                                <li>Maintained high level of customer communication while documenting engagements in internal systems (i.e. Salesforce, Desk, JIRA, and others.)</li>
+                                <li>Served as an escalation point for technical support team by gathering stakeholders and owning customer communication, technical troubleshooting, and resolution with a high degree of client satisfaction. </li>
+                                <li>Mentored team members on support process and troubleshooting best practices.</li>
+                            </ul>
+                        </p>
+                        <ul class="content-skills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>XML</li>
+                        </ul>
                         <span class="cd-date">Jan 18</span>
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
                 <!-- cd-timeline-block -->
-
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img cd-picture">
                     </div>
                     <!-- cd-timeline-img -->
-
                     <div class="cd-timeline-content">
-                        <h2>Title of section 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae
-                            rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem
-                            voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                        <h3>Title of section 3</h3>
+                        <p>
+                            <ul class="timeline-list">
+                                <li>Provided second line phone, email, and chat support; escalated issue to internal resources as needed. </li>
+                                <li>Served as the technical advocate for customers, providing information on best practices for utilizing company and partner products. </li>
+                                <li>Applied custom modifications to applications using moderate HTML, JavaScript, CSS and XML. </li>
+                                <li>Assisted customers through technical setup, including IMS and HRIS integration.</li>
+                                <li>Maintained high level of customer communication while documenting engagements in internal systems (i.e. Salesforce, Desk, JIRA, and others.)</li>
+                                <li>Served as an escalation point for technical support team by gathering stakeholders and owning customer communication, technical troubleshooting, and resolution with a high degree of client satisfaction. </li>
+                                <li>Mentored team members on support process and troubleshooting best practices.</li>
+                            </ul>
+                        </p>
+                        <ul class="content-skills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>XML</li>
+                        </ul>
                         <span class="cd-date">Jan 24</span>
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
                 <!-- cd-timeline-block -->
-
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img cd-location">
                     </div>
                     <!-- cd-timeline-img -->
                     <div class="cd-timeline-content">
-                        <h2>Title of section 4</h2>
+                        <h3>Title of section 4</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
                         <span class="cd-date">Feb 14</span>
                     </div>
@@ -283,12 +327,12 @@
         <div class="row">
             <div class="col">
                 <h2 class="contact-form-header">Work With Me:</h2>
-                <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
                     <p>Thank you for your for submission!</p>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                     </button>
-                </div> -->
+                </div>
                 <form id="contactform1" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -305,13 +349,13 @@
                     <div class="form-group">
                         <label for="project">Project Type:</label>
                         <select class="form-control form-control-sm" id="project">
-                        <option disabled selected>-Select One-</option>
-                        <option>WebSite</option>
-                        <option>Email Design</option>
-                        <option>Photography</option>
-                        <option>Coding Help</option>
-                        <option>Other</option>
-                      </select>
+                            <option disabled selected>-Select One-</option>
+                            <option>WebSite</option>
+                            <option>Email Design</option>
+                            <option>Photography</option>
+                            <option>Coding Help</option>
+                            <option>Other</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="contactFormText1">Additional Information:</label>
@@ -328,11 +372,10 @@
             <p class="footer">Copyright 2019 &copy; Tedko.io All rights Reserved.</p>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/JavaScript" src="js/application.js"></script>
-    <script type="text/JavaScript" src="js/dynamic.js"></script>
 </body>
 
 </html>
