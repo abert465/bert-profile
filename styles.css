@@ -19,9 +19,9 @@ img {
 }
 
 .brand-pic {
-    border: 2px solid #B6B6B6;
+    border: 2px solid #41bdbb;
     border-radius: 50%;
-    background-color: #e33782;
+    background-color: #f26e85;
     color: #fffff2;
 }
 
@@ -61,17 +61,12 @@ img {
     background-color: #333;
 }
 
-.intro {
-    color: #fffff2;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2.5em;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.intro:hover {
+    color: #41bdbb;
 }
 
-.intro:hover {
-    color: #13a4b9;
+.pro-pic1-box {
+    margin-top: 50px;
 }
 
 .pro-pic1 {
@@ -79,9 +74,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 2px solid #e33782;
+    border: 2px solid #f26e85;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .pro-pic1-overlay {
@@ -89,7 +84,7 @@ img {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #13a4b9;
+    background-color: #41bdbb;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -110,6 +105,7 @@ img {
     overflow: hidden;
     top: 50%;
     left: 50%;
+    font-size: 1.3rem;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -117,23 +113,24 @@ img {
 .pro-title {
     color: #fffff2;
     text-align: center;
-    border-bottom: 2px solid #13a4b9;
+    border-bottom: 2px solid #41bdbb;
     font-size: 1.5em;
     padding-bottom: 15px;
     padding-top: 15px;
+    margin-top: 20px;
 }
 
 .pro-title:hover {
-    color: #13a4b9;
+    color: #41bdbb;
 }
 
 .list-group {
-    border: 2px solid #13a4b9;
+    border: 2px solid #41bdbb;
     background-color: #333 !important;
 }
 
 .list-group-item {
-    color: #13a4b9;
+    color: #41bdbb;
     background-color: #333333;
 }
 
@@ -199,7 +196,7 @@ img {
 }
 
 .instagram span {
-    background-color: #db5a3c;
+    background-color: #FFDC80;
 }
 
 .linkedin span {
@@ -244,54 +241,88 @@ img {
 }
 
 .pro-pic2 {
-    margin-top: 1px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 2px solid #e33782;
+    border: 2px solid #f26e85;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 25px;
+    margin-bottom: 40px;
 }
 
-.pro-pic2-cap {
+.endorsments {
     color: #fffff2;
-    padding-top: 5px;
+    border-bottom: 2px solid #41bdbb;
+}
+
+#reviews {
+    text-align: center;
+    border: 2px solid #f26e85;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fffff2;
+    font-size: 1rem;
+}
+
+.pro-pic3 {
+    border-radius: 25px;
 }
 
 .about-h2 {
     color: #fffff2;
+    border-bottom: 2px solid #41bdbb;
 }
 
 .about-p {
     color: #fffff2;
+    border: 2px solid #f26e85;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .btn {
-    color: #13a4b9 !important;
-    border: 2px solid #13a4b9 !important;
+    color: #41bdbb !important;
+    border: 2px solid #41bdbb !important;
     background-color: #fffff2 !important;
 }
 
 .btn:hover {
     color: #fffff2 !important;
     border: 2px solid #fffff2 !important;
-    background-color: #13a4b9 !important;
+    background-color: #41bdbb !important;
 }
 
 .pro-pic3 {
-    margin-top: 15px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 2px solid #e33782;
+    border: 2px solid #f26e85;
     padding: 15px;
+    margin-bottom: 50px;
+}
+
+.p-skills {
+    color: #fffff2;
+    margin-top: 25px;
+    border-bottom: 2px solid #41bdbb;
 }
 
 .skills {
     background-color: #333;
     color: #fffff2;
-    border: 2px solid #e33782;
-    padding: 10px;
+    border: 2px solid #f26e85;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.timeline-header {
+    color: #fffff2;
+    margin-top: 15px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #41bdbb;
 }
 
 .cd-container {
@@ -309,10 +340,32 @@ img {
     clear: both;
 }
 
+.contact-form-header {
+    color: #fffff2;
+    border-bottom: 2px solid #41bdbb;
+}
+
 .contact-form {
     color: #fffff2;
-    border: 2px solid #e33782;
-    padding: 10px;
+    border: 2px solid #f26e85;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    color: #fffff2;
+    text-align: center;
+    vertical-align: text-bottom !important;
+    margin-bottom: 0;
+    font-size: .8rem;
+    background: #343A40;
+    padding: 20px;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 
@@ -330,7 +383,7 @@ Main components
 #cd-timeline {
     position: relative;
     padding: 2em 0;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
 }
 
@@ -341,18 +394,18 @@ Main components
     left: 25px;
     height: 100%;
     width: 4px;
-    background: #13a4b9;
+    background: #41bdbb;
 }
 
 @media only screen and (min-width: 1170px) {
     #cd-timeline {
-        margin-top: 3em;
+        margin-top: 1em;
         margin-bottom: 3em;
     }
     #cd-timeline::before {
         left: 50%;
         margin-left: -2px;
-        color: #e33782;
+        color: #f26e85;
     }
 }
 
@@ -394,7 +447,7 @@ Main components
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #e33782, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px #f26e85, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img {
@@ -421,7 +474,7 @@ Main components
     background: #333;
     border-radius: 2px;
     padding: 1em;
-    border: 2px solid #e33782;
+    border: 2px solid #f26e85;
 }
 
 .timeline-content-info {
@@ -462,7 +515,7 @@ i {
 
 li {
     border-radius: 2px;
-    border: 2px solid #13a4b9;
+    border: 2px solid #41bdbb;
     display: inline-block;
     padding: 2px 10px;
     color: #fffff2;
@@ -507,7 +560,7 @@ li {
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #13a4b9;
+    border-right: 7px solid #41bdbb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -539,7 +592,7 @@ li {
         top: 24px;
         left: 100%;
         border-color: transparent;
-        border-left-color: #13a4b9;
+        border-left-color: #41bdbb;
     }
     .cd-timeline-content .cd-date {
         position: absolute;
@@ -557,7 +610,7 @@ li {
         left: auto;
         right: 100%;
         border-color: transparent;
-        border-right-color: #13a4b9;
+        border-right-color: #41bdbb;
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
         float: right;

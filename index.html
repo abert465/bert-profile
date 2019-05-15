@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
-
-
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <link rel="stylesheet" href="styles.css" crossorigin="anonymous">
     <title>tedko.io</title>
 </head>
 
@@ -28,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#home">
                         <i class="fa fa-home fa-1x"></i>Home
                     </a>
                 </li>
@@ -38,13 +37,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-comments"></i>Feedback
+                    <a class="nav-link" href="#endorsments">
+                        <i class="far fa-comments"></i>Endorsments
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">
-                        <i class="fas fa-list fa-1x"></i>Skills
+                        <i class="fas fa-list fa-1x"></i>Abilities
                     </a>
                 </li>
                 <li class="nav-item">
@@ -64,7 +63,7 @@
         <div class="row">
             <div class="col">
                 <div class="pro-pic1-box">
-                    <img class="pro-pic1" src="https://farm8.staticflickr.com/7860/33640578758_91524d8880_z.jpg" alt="profilesitephoto" />
+                    <img class="pro-pic1" src="images/profile-pic1.jpg" alt="profilesitephoto" />
                     <div class="pro-pic1-overlay">
                         <div class="pro-pic1-text">Greetings, I am Bert C. Welcome to my page.</div>
                     </div>
@@ -74,8 +73,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <h3 class="pro-title">Computer Technologist, Web Designer, and Web Developer
-                </h3>
+                <h3 class="pro-title">Computer Technologist, Web Designer, and Web Developer</h3>
             </div>
         </div>
         <div class="row">
@@ -102,7 +100,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <img class="pro-pic2" src="https://farm5.staticflickr.com/4784/39788112255_5dd57499d6_b.jpg" alt="LA Hills" />
+                <img class="pro-pic2" src="images/bert-la.jpg" alt="LA Hills" />
             </div>
         </div>
         <div class="row">
@@ -111,15 +109,25 @@
         </div>
         <div class="row">
             <div class="col">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h1>Basic Information:</h1>
-                    </li>
-                    <li class="list-group-item">Name: Albert "Bert" Campos Jr</li>
-                    <li class="list-group-item">Email: acampos892@gmail.com</li>
-                    <li class="list-group-item">Phone: +1 (210)577-2051</li>
-                    <li class="list-group-item">Nationality: United States</li>
-                </ul>
+                <h2 id="endorsments" class="endorsments">Endorsments:</h2>
+                <div id="reviews" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <p class="d-block w-100" alt=><i>"The VCC wanted to make a special shout out and recognize Bert Campos for embodying our core values. Bert was featured in several of the values stories for his hard work and collaborating cross-functionally to make great things
+                                happen here at IeL. Thank you, Bert!"</i></p>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <p class="d-block w-100" alt=><i>"There is only one person that goes beyond the word <b>"COMMITMENT"</b>. This individual has lived and breathed by this core value day in and day out. He has been a savior for the sales team when something needed to be done and done
+                                fast. Albert Campos exemplifies what it means to be committed to our clients. He just doesn’t walk the customer through the issue but he explains why it happened and the process of how he solved for the issue. He will also
+                                discuss preventative measures so that the client will not have to go through the same issues again."</i></p>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <p class="d-block w-100" alt=><i>"Honerable mention, Albert Campos has been a <b>“NO QUESTIONS ASKED”</b>, <b>“TEAM FIRST”</b>, <b>"GOOD ON HIS COMMITMENTS”</b> type of character for the support team. His commitment to his work is exceptional, and should be recognized and celebrated.
+                                Thank you Bert for all you do for us!"</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -131,172 +139,200 @@
         <div class="row">
             <div class="col">
                 <div class="text-center">
-                    <a href="https://drive.google.com/file/d/1K0kphvjfoKhNrjcG92Xm2kF7b5GPbRQg/view?usp=sharing" target="_blank" class="btn btn-lg btn-block" role="button" aria-pressed="true">View CV</a>
+                    <a href="docs/ResumeRedux.pdf" target="_blank" class="btn btn-lg" role="button" aria-pressed="true">View CV</a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <img class="pro-pic3" src="https://farm5.staticflickr.com/4779/40756233941_6f788307c6_n.jpg" width="320" height="313" alt="NY skyline" />
+                <img class="pro-pic3" src="images/bert-ny.jpg" width="320" height="313" alt="NY skyline" />
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <ul class="list-group">
+                <!-- <ul class="list-group">
                     <li class="list-group-item">Address: 11434 W FM 471, Apt 7105, San Antonio, Tx</li>
                     <li class="list-group-item">Birthday: 06/08/1989</li>
                     <li class="list-group-item">Languages: English, Spanish</li>
                     <li class="list-group-item">Gender: Male</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <div class="row">
             <div class="col">
+                <h2 class="p-skills">Abilities</h2>
                 <div class="skills" id="skills">
-                    <h2 class="p-skills">Professional Skills</h2>
                     <h5>Photoshop<i class="fas fa-camera"></i></h5>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 100%; height: 20px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
                     <h5>HTML<i class="fab fa-html5"></i></h5>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 100%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
                     <h5>CSS<i class="fab fa-css3"></i></h5>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 100%; height: 20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
                     <h5>React.JS<i class="fab fa-react"></i></h5>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 68%; height: 20px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
                     <h5>JavaScript <i class="fab fa-js"></i></h5>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 70%; height: 20px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="timeline-header">Experience:</h2>
+            </div>
+        </div>
         <div class="row">
             <div id="cd-timeline" class="col cd-container">
-                <div class="cd-timeline-block ">
-                    <div class="cd-timeline-img cd-picture ">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
                     </div>
-                    <div class="cd-timeline-content ">
+                    <div class="cd-timeline-content">
                         <h2>Inspired eLearning</h2>
-                        <div class="timeline-content-info ">
-                            <span class="timeline-content-info-title ">
+                        <div class="timeline-content-info">
+                            <span class="timeline-content-info-title">
                                 Technical Support Agent Tier 3
                             </span>
-                            <span class="timeline-content-info-date ">
-                                <i class="fa fa-calendar-o " aria-hidden="true "></i>
+                            <span class="timeline-content-info-date">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                 Aug 2018 - Present
                             </span>
                         </div>
                         <p>
                             <ul>
-                                <li>+ Provided second line phone, email, and chat support; escalated issue to internal resources as needed. </li>
-                                <li>+ Served as the technical advocate for customers, providing information on best practices for utilizing company and partner products. </li>
-                                <li>+ Applied custom modifications to applications using moderate HTML, JavaScript, CSS and XML. </li>
-                                <li>+ Assisted customers through technical setup, including IMS and HRIS integration.</li>
-                                <li>+ Maintained high level of customer communication while documenting engagements in internal systems (i.e. Salesforce, Desk, JIRA, and others.)</li>
-                                <li>+ Served as an escalation point for technical support team by gathering stakeholders and owning customer communication, technical troubleshooting, and resolution with a high degree of client satisfaction. </li>
-                                <li>+ Mentored team members on support process and troubleshooting best practices.</li>
+                                <li>Provided second line phone, email, and chat support; escalated issue to internal resources as needed. </li>
+                                <li>Served as the technical advocate for customers, providing information on best practices for utilizing company and partner products. </li>
+                                <li>Applied custom modifications to applications using moderate HTML, JavaScript, CSS and XML. </li>
+                                <li>Assisted customers through technical setup, including IMS and HRIS integration.</li>
+                                <li>Maintained high level of customer communication while documenting engagements in internal systems (i.e. Salesforce, Desk, JIRA, and others.)</li>
+                                <li>Served as an escalation point for technical support team by gathering stakeholders and owning customer communication, technical troubleshooting, and resolution with a high degree of client satisfaction. </li>
+                                <li>Mentored team members on support process and troubleshooting best practices.</li>
                             </ul>
                         </p>
-                        <ul class="content-skills ">
+                        <ul class="content-skills">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>jQuery</li>
                             <li>XML</li>
                         </ul>
-                    </div>
-                    <!-- cd-timeline-content -->
-                </div>
-                <!-- cd-timeline-block -->
-
-                <div class="cd-timeline-block ">
-                    <div class="cd-timeline-img cd-movie ">
-                    </div>
-                    <!-- cd-timeline-img -->
-
-                    <div class="cd-timeline-content ">
-                        <h2>Technical Support Agent Tier 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
                         <span class="cd-date ">Jan 18</span>
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
                 <!-- cd-timeline-block -->
 
-                <div class="cd-timeline-block ">
-                    <div class="cd-timeline-img cd-picture ">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
                     </div>
                     <!-- cd-timeline-img -->
 
-                    <div class="cd-timeline-content ">
+                    <div class="cd-timeline-content">
+                        <h2>Technical Support Agent Tier 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                        <span class="cd-date">Jan 18</span>
+                    </div>
+                    <!-- cd-timeline-content -->
+                </div>
+                <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div>
+                    <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
                         <h2>Title of section 3</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae
                             rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem
                             voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                        <span class="cd-date ">Jan 24</span>
+                        <span class="cd-date">Jan 24</span>
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
                 <!-- cd-timeline-block -->
 
-                <div class="cd-timeline-block ">
-                    <div class="cd-timeline-img cd-location ">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-location">
                     </div>
                     <!-- cd-timeline-img -->
-
-                    <div class="cd-timeline-content ">
+                    <div class="cd-timeline-content">
                         <h2>Title of section 4</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <span class="cd-date ">Feb 14</span>
+                        <span class="cd-date">Feb 14</span>
                     </div>
                     <!-- cd-timeline-content -->
                 </div>
                 <!-- cd-timeline-block -->
-
                 <!-- cd-timeline-content -->
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <form class="contact-form">
+                <h2 class="contact-form-header">Work With Me:</h2>
+                <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <p>Thank you for your for submission!</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <form id="contactform1" class="contact-form">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control form-control-sm" id="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control form-control-sm" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number:</label>
+                        <input type="text" class="form-control form-control-sm" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Project Type:</label>
+                        <select class="form-control form-control-sm" id="project">
+                        <option disabled selected>-Select One-</option>
+                        <option>WebSite</option>
+                        <option>Email Design</option>
+                        <option>Photography</option>
+                        <option>Coding Help</option>
+                        <option>Other</option>
                       </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="contactFormText1">Additional Information:</label>
+                        <textarea class="form-control form-control-sm" id="info" rows="2"></textarea>
                     </div>
+                    <button type="submit" class="btn btn-primary" value="submit" id="submit">Submit</button>
+                    <button type="reset" class="btn btn-primary" value="reset" id="reset" onclick="clearForm">Clear</button>
                 </form>
             </div>
         </div>
     </div>
+    <div class="row no-gutters">
+        <div class="col">
+            <p class="footer">Copyright 2019 &copy; Tedko.io All rights Reserved.</p>
+        </div>
     </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script type="text/JavaScript" src="js/application.js"></script>
+    <script type="text/JavaScript" src="js/dynamic.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-<script src="dynamic.js"></script>
 
 </html>
